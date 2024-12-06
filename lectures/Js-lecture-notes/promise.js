@@ -113,14 +113,14 @@ function makeBurgerThen() {
     });
 }
 
-// fetch("https://something.com/cart", {
-//   method: "POST",
-// })
-//   .then((res) => res.json())
-//   .then((data) => {
-//     //update your ui with the data
-//     console.log("data", data);
-//   });
+fetch("https://something.com/cart", {
+  method: "POST",
+})
+  .then((res) => res.json())
+  .then((data) => {
+    //update your ui with the data
+    console.log("data", data);
+  });
 
 // setTimeout(() => {
 //   console.log("1 seconds");
