@@ -31,11 +31,66 @@ export const TOPPINGS = {
 };
 
 export default class Pizza {
-  constructor(size, toppingCodes) {}
+  constructor(size, toppingCodes) {
+    this.size = size;
+    this.toppingCodes = [...toppingCodes];
+  }
 
-  getBaseCost() {}
+  getBaseCost() {
+    const baseCost = BASE_PRICE[this.size];
 
-  getTotalCost() {}
+    if(baseCost === undefined){
+      throw new Error(`invalid size ${this.size}`);
+    }
 
-  getDescription() {}
+    return baseCost;
+  }
+
+  getTotalCost() {
+    const baseCost = this.getBaseCost();
+
+
+    const toppingCost = this.toppingCodes.reduce((sum, code) => {
+      const topping = TOPPINGS[code]; 
+
+      if (!topping) {
+        throw new Error(`Invalid topping code: ${code}`);
+      }
+
+      return sum + topping.cost; 
+    }, 0);
+
+
+    // let toppingCost = 0;
+
+    // this.toppingCodes.forEach((code)=>{
+    //   const topping = TOPPINGS[code];
+    //   if(!topping){
+    //     throw new Error(`Invalid topping code: ${code}`);
+    //   }
+    //   toppingCost += topping.cost;
+    // })
+    
+    return baseCost + toppingCost;
+
+  }
+
+  getDescription() {
+
+    const toppingArr = this.toppingCodes.map((code)=>{
+      const pizzaOjb = this.toppingCodes[code];
+      
+      if (!topping) {
+        throw new Error(`Invalid topping code: ${code}`);
+    }
+      return pizzaOjb.name;
+    })
+
+    if (toppingArr.length === 0) {
+      throw new Error("there is no topping.");
+    }
+    
+    return console.log(`A ${this.size} pizza with ${toppingArr.join(", ")}`);
+    // "A medium pizza with pepperoni, green pepper."
+  }
 }
