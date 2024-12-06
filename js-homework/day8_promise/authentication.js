@@ -63,25 +63,50 @@ export const login = async (email, password) => {
   // e.g. { name: "Leanne Graham", username: "Bret", email: "leanne.graham@email.com", token: "token" }
   // should return the error message if the login is unsuccessful
   // e.g. "User not found", "Invalid password"
+
   try {
 
     const user = await getUserByEmail(email);
 
-    const isTrue = await verifyPassword(password, user.password);
+    try {
+      await verifyPassword(password, user.password);
+    } catch (error) {
 
-    if(isTrue){
-      return {
-        name: user.name,
-        username: user.username,
-        email: user.email,
-        token,
-      }
+      return "Invalid password";
     }
 
+    const token = generateToken(user); 
+    return {
+      name: user.name,
+      username: user.username,
+      email: user.email,
+      token,
+    };
   } catch (error) {
-
     return "User not found";
   }
+
+  // try {
+
+  //   const user = await getUserByEmail(email);
+
+  //   const isTrue = await verifyPassword(password, user.password);
+
+  //   if(isTrue){
+  //     return {
+  //       name: user.name,
+  //       username: user.username,
+  //       email: user.email,
+  //       token,
+  //     }
+  //   }else{
+  //     return "Invalid password"
+  //   }
+
+  // } catch (error) {
+
+  //   return "User not found";
+  // }
 };
 
 
