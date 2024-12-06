@@ -84,6 +84,7 @@ export function createPerson(name) {
         },
         setName(name){
             personName = name;
+            return personName; 
         }
     }
 }
@@ -134,7 +135,7 @@ export function createLimitedCallFunction(fn, limit) {
 
 export function createRateLimiter(fn, limit, interval) {
     let callCount = 0;
-    let firstCallTime = true; 
+    let firstCallTime = null; 
 
     return function (...args) {
         const now = Date.now(); 
