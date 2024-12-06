@@ -78,19 +78,24 @@ export default class Pizza {
   getDescription() {
 
     const toppingArr = this.toppingCodes.map((code)=>{
-      const pizzaOjb = this.toppingCodes[code];
+
+      const pizzaOjb = toppingCodes[code];
       
       if (!topping) {
         throw new Error(`Invalid topping code: ${code}`);
     }
+
       return pizzaOjb.name;
     })
+
 
     if (toppingArr.length === 0) {
       throw new Error("there is no topping.");
     }
+
+    const [topping1, topping2, topping3] = toppingArr;
     
-    return console.log(`A ${this.size} pizza with ${toppingArr.join(", ")}`);
-    // "A medium pizza with pepperoni, green pepper."
+    return `A ${this.size} pizza with ${topping1}, ${topping2}, ${topping3}.`;
+    
   }
 }

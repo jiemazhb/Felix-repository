@@ -18,14 +18,22 @@ export default class Order {
   }
 
   removePizza(index) {
-    this.pizzas[index] = null;
+    if(index < 0 || index >= this.pizzas.length){
+      throw new Error("index is invalid");
+    }
+
+    this.pizzas.splice(index, 1);
   }
 
   getTotalCost() {
     return this.pizzas.reduce((sum, pizza) =>{
-      sum += (pizza.getTotalCost());
+      
+      return sum += (pizza.getTotalCost());
+
     }, 0);
   }
 
-  updateStatus(newStatus) {}
+  updateStatus(newStatus) {
+    this.status = newStatus;
+  }
 }
