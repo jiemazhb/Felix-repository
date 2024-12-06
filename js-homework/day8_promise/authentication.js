@@ -72,41 +72,19 @@ export const login = async (email, password) => {
       await verifyPassword(password, user.password);
     } catch (error) {
 
-      return "Invalid password";
+      return error.message;
     }
 
-    const token = generateToken(user); 
     return {
       name: user.name,
       username: user.username,
       email: user.email,
-      token,
+      token: "token"
     };
   } catch (error) {
-    return "User not found";
+    return error.message;
   }
 
-  // try {
-
-  //   const user = await getUserByEmail(email);
-
-  //   const isTrue = await verifyPassword(password, user.password);
-
-  //   if(isTrue){
-  //     return {
-  //       name: user.name,
-  //       username: user.username,
-  //       email: user.email,
-  //       token,
-  //     }
-  //   }else{
-  //     return "Invalid password"
-  //   }
-
-  // } catch (error) {
-
-  //   return "User not found";
-  // }
 };
 
 

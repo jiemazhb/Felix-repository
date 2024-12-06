@@ -42,9 +42,7 @@ export const sequentialPromise = async (promises, order) => {
   //order = [2,1,3]
   //promises = ["data1", "data2", "data3"]
   //results = ["data2", "data1", "data3"]
-  if (!Array.isArray(promises) || !Array.isArray(order)) {
-    throw new Error("Both promises and order must be arrays");
-  }
+
   if (promises.length !== order.length) {
     throw new Error("Promises and order arrays must have the same length");
   }
@@ -52,13 +50,13 @@ export const sequentialPromise = async (promises, order) => {
   const results = [];
   
   try {
-    // Execute promises in sequential order based on the `order` array
+    
     for (const index of order) {
-      const result = await promises[index - 1]; // Access the promise by the given order
-      results.push(result); // Collect the result
+      const result = await promises[index - 1]; 
+      results.push(result); 
     }
-    return results; // Return the results in the specified order
+    return results; 
   } catch (err) {
-    throw new Error(`Promise rejected: ${err.message}`);
+    throw "error";
   }
 };
