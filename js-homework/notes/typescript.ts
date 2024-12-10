@@ -1,9 +1,11 @@
-type id = number | string;
+type Id = number | string;
 
-const myId : id = 234;
-const youId : id = "3f3fw";
+const myId : Id = 234;
+const youId : Id = "3f3fw";
 
 console.log(`myid is ${myId} your id is ${youId}`);
+
+// factory design patter using typescript
 
 interface Human {
     name : string;
@@ -78,3 +80,37 @@ const factory1 = HumanFactory.buildFactory();
 const thug = factory1.getHuman("Thug", "peter");
 thug.selfIntro();
 
+
+// =======================
+class Professor extends Teacher{
+
+    selfIntro(): void {
+        console.log(`my name is ${this.name} and I am a Profssor`);
+    }
+
+    showPhDCertificate(){
+        console.log("here is my PhD degree");
+        
+    }
+}
+
+const pro = new Professor("crook", 54);
+
+pro.showPhDCertificate();
+pro.selfIntro();
+
+//========================
+
+type Career = Teacher | Thug;
+
+const professional : Career = new Teacher("zachary", 12);
+professional.selfIntro();
+
+
+type Func = (() => void) | ((args : number) => number);
+
+const f : Func = () => {
+    console.log("without parameter");  
+}
+
+f();

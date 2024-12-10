@@ -55,3 +55,21 @@ t.selfIntro();
 const factory1 = HumanFactory.buildFactory();
 const thug = factory1.getHuman("Thug", "peter");
 thug.selfIntro();
+// =======================
+class Professor extends Teacher {
+    selfIntro() {
+        console.log(`my name is ${this.name} and I am a Profssor`);
+    }
+    showPhDCertificate() {
+        console.log("here is my PhD degree");
+    }
+}
+const pro = new Professor("crook", 54);
+pro.showPhDCertificate();
+pro.selfIntro();
+const professional = new Teacher("zachary", 12);
+professional.selfIntro();
+const f = () => {
+    console.log("without parameter");
+};
+f();
