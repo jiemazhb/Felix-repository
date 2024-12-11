@@ -66,5 +66,39 @@ myCar.fillUPTank(20);
 
 Vehicle.status();
 
+function expect(val1){
+    return {
+        toBe : function(val2){
+            if(val1 === val2){
+                return true;
+            }else{
+                throw new Error("Not Equal");
+            }
+        },
+        notToBe : function(val3){
+            if(val1 !== val3){
+                return true;
+            }else{
+                throw new Error("Equal");
+            }
+        }
+    }
+}
 
+const createCounter = function(init){
+    
+    const holder = init;
+
+    return {
+        increment : function(){
+            return ++init;
+        },
+        decrement : function(){
+            return --init;
+        },
+        reset : function(){
+            init = holder;
+        }
+    }
+}
 
