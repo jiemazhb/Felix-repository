@@ -44,7 +44,7 @@ export default function TodoList() {
       <h1>TODO LIST</h1>
       <hr></hr>
 
-      <TextField
+      <TextField sx={{ display: "flex", marginBottom: 2 }}
         label="task"
         id="outlined-size-small"
         placeholder="placeholder"
