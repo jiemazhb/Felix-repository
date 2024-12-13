@@ -2,6 +2,7 @@ export const fetchPosts = async () => {
   //fetch posts from "https://jsonplaceholder.typicode.com/posts"
   // return the posts
 
+
   try {
     const response = await fetch(`https://jsonplaceholder.typicode.com/posts`,{
       method : "GET",
@@ -20,9 +21,11 @@ export const fetchPosts = async () => {
 //     console.log("data", data);
 //   });
 
+
 export const fetchPostById = async (id) => {
   //fetch a post by id from "https://jsonplaceholder.typicode.com/posts/${id}"
   //return the post
+
   try {
     const response = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`,{
       method : "GET",
@@ -32,6 +35,7 @@ export const fetchPostById = async (id) => {
   } catch (err) {
     console.log(`error {err}`);
   }
+
 };
 
 export const sequentialPromise = async (promises, order) => {
@@ -59,4 +63,5 @@ export const sequentialPromise = async (promises, order) => {
   } catch (err) {
     throw "error";
   }
+
 };

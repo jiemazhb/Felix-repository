@@ -16,19 +16,23 @@ export const users = [
 export const encodePassword = (password) => {
   // encode the password by reversing it and add "encoded" at the end
   // for example, "password1" => "1drowssapencoded"
+
   let reversed = '';
   for (let i = password.length - 1; i >= 0; i--) {
     reversed += password.charAt(i);
   }
   return reversed + 'encoded';
+
 };
 
 export const decodePassword = (encrypted) => {
   // decode the password
   // for example, "1drowssapencoded" => "password1"
+
   const str = encrypted.replace('encoded', '');
 
   return str.split('').reverse().join('');
+
 
 };
 
@@ -37,12 +41,14 @@ export const getUserByEmail = async (email) => {
   // should throw an error with message "User not found" if the user is not found
   // e.g. { name: "Leanne Graham", username: "Bret", email: "leanne.graham@email.com", password: "1drowssapencoded" }
 
+
   const user = users.find((user) => user.email === email);
 
   if (!user) {
     throw new Error("User not found");
   }
   return user;
+
 };
 
 export const verifyPassword = async (password, encrypted) => {
@@ -55,6 +61,7 @@ export const verifyPassword = async (password, encrypted) => {
   }else{
     throw new Error("Invalid password");
   }
+
 };
 
 export const login = async (email, password) => {
@@ -65,7 +72,6 @@ export const login = async (email, password) => {
   // e.g. "User not found", "Invalid password"
 
   try {
-
     const user = await getUserByEmail(email);
 
     try {
