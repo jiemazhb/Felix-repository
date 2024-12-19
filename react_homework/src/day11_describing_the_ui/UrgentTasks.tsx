@@ -16,13 +16,12 @@ export default function UrgentTasks({ tasks }: { tasks: TaskType[] }) {
   return (
     <div>
       <h1>Urgent Tasks</h1>
-      {/* 仅显示优先级为 "urgent" 的任务 */}
       <ul>
         {tasks
-          .filter((task) => task.priority === "urgent") // 筛选任务
-          .map((task) => ( // 遍历任务并生成 <li> 元素
+          .filter((task) => task.priority === "urgent") 
+          .map((task) => ( 
             <li key={task.id}>
-            {task.name} {/* 保证任务名称是独立的 */}
+            {task.name} 
           </li>
           ))}
       </ul>

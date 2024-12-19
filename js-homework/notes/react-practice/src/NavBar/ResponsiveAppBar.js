@@ -16,9 +16,10 @@ import { Link } from 'react-router-dom';
 
 // Navigation links
 const pages = [
-  { label: 'Day11', path: '/day11' },
+  { label: 'Day11', path: '/' },
   { label: 'Day12', path: '/day12' },
   { label: 'Day13', path: '/day13' },
+  { label: 'Ohter', path: '/other' },
 ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 

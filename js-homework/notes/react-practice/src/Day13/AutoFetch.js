@@ -47,6 +47,7 @@ export default function AutoFetch() {
     }, 2000);
 
     return () => clearInterval(intervalId);
+    
   }, [errorMsg]);
 
   return (
