@@ -56,10 +56,10 @@ export default function TicTac() {
       <h1 style={styles.title}>Tic Tac Toe</h1>
 
       <div style={styles.board}>
-        {board.map((cell, index) => {
+        {board.map((val, index) => {         
           return (
-            <div key={index} style={styles.cell} onClick={() => handleClick(index)}>
-              {cell}
+            <div key={index} style={styles.val} onClick={() => handleClick(index)}>
+              {val}
             </div>
           );
         })}
@@ -92,7 +92,7 @@ const styles = {
     margin: "0 auto",
     width: "150px",
   },
-  cell: {
+  val: {
     width: "50px",
     height: "50px",
     display: "flex",

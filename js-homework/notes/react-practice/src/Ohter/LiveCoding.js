@@ -1,42 +1,39 @@
-import { useEffect, useState } from "react";
-
+//import { useEffect, useState } from "react";
+// "https://dummyjson.com/products/search?q=phone"
 export default function LiveCoding() {
-  const [products, setProducts] = useState([]);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await fetch(
-          "https://dummyjson.com/products/search?q=phone"
-        );
+  const obj = {
+    name: "Zhao",
+    age: 43,
+    address: "11511 Lambert ave",
+  };
 
-        const result = await res.json();
+  const newObj = { ...obj };
 
-        setProducts(result.products);
-      } catch (error) {}
-    };
 
-    fetchData();
-  }, []);
+  
+
+  
+
+  
 
   return (
     <>
       <ul>
-        {products ? (
-          products.map((product) => {
-            const {id, price, title} = product;
-
-            return (
-              <li key={id}>
-                <div>{id}</div>
-                <div>{price}</div>
-                <div>{title}</div>
-              </li>
-            );
-          })
-        ) : (
-          <li> something wrong </li>
-        )}
+        {/* {newArr.map((val, index) => {
+          return <li key={index}>{val}</li>;
+        })} */}
+        
+        {(() => {
+          const { name, age, address } = newObj;
+          return (
+            <>
+              <li>{name}</li>
+              <li>{age}</li>
+              <li>{address}</li>
+            </>
+          );
+        })()}
       </ul>
     </>
   );

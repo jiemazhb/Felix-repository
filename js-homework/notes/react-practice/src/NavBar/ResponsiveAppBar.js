@@ -20,6 +20,8 @@ const pages = [
   { label: 'Day12', path: '/day12' },
   { label: 'Day13', path: '/day13' },
   { label: 'Ohter', path: '/other' },
+  { label: 'Day16', path: '/day16' },
+  { label: 'Day18', path: '/day18' }
 ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
