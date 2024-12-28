@@ -6,6 +6,10 @@ import Tiktactoe from './Tiktac'
 import MyHoc from './HOC practice/HigherOrderComp'
 import OriginalComp from './HOC practice/OriginalComp'
 import CallCustomHook from './Custom Hook/CallCustomHook'
+import { Provider } from 'react-redux'
+import MyComponent from './Redux/MyComponent'
+import MyContext from './Context&Reducer/MyContext'
+import ExampleComp from './Context&Reducer/ExampleComp'
 
 export default function Other() {
 
@@ -22,9 +26,15 @@ export default function Other() {
         <h1>Live Coding </h1>
         <LiveCoding />
         <h1>HOC</h1>
-        <EnhanceComp caller = "Tina"/> */}
+        <EnhanceComp caller = "Tina"/> 
         <h1>Custom Hook</h1>
-        <CallCustomHook/>
+        <CallCustomHook/> */}
+
+        <MyContext>
+            <ExampleComp/>
+        </MyContext>
+          <hr/>
+        <MyComponent />
     </div>
   )
 }

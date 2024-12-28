@@ -6,6 +6,7 @@ import Day13 from './Day13/Day13'
 import Other from './Ohter/Other'
 import Day16 from './Day16/Day16'
 import Day18 from './Day18/Day18'
+import Practice from './practice/Practice'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path='other' element = {<Other/>} />
           <Route path='day16' element = {<Day16/>} />
           <Route path='day18' element = {<Day18/>} />
+          <Route path='practice' element = {<Practice/>} />
         </Route>
       </Routes>
     </Router>
@@ -25,3 +27,29 @@ function App() {
 }
 
 export default App;
+// import React, { useEffect } from 'react';
+// import { useDispatch, useSelector} from 'react-redux';
+// import { fetchTodos } from './Day18/redux/slices/todosSlice';
+// import ThemeSwitcher from './Day18/redux/components/ThemeSwitcher';
+// import TodoList from './Day18/redux/components/TodoList'
+// import TodoForm from './Day18/redux/components/TodoForm'
+
+// function App() {
+//   const dispatch = useDispatch();
+//   const theme = useSelector((state) => state.theme);
+
+//   useEffect(() => {
+//     dispatch(fetchTodos());
+//   }, [dispatch]);
+
+//   return (
+//     <div className={theme === 'light' ? 'light-theme' : 'dark-theme'}>
+//       <ThemeSwitcher />
+//       <TodoForm />
+//       <TodoList />
+//     </div>
+//   );
+// }
+
+// export default App;
+

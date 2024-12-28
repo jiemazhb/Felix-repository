@@ -8,7 +8,7 @@ const initialState = {
   error: null,
 };
 
-function todoReducer(state, action) {
+const todoReducer = (state, action) => {
   switch (action.type) {
     case "FETCH_TODOS":
       return { ...state, todos: action.payload };

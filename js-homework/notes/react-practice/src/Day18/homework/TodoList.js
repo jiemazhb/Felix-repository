@@ -20,12 +20,7 @@ export default function TodoList() {
     <div style={{ padding: "20px" }}>
       <h1>To-Do List</h1>
       <div>
-        <input
-          type="text"
-          value={newTodo}
-          onChange={(e) => setNewTodo(e.target.value)}
-          placeholder="Add a new task"
-        />
+        <input type="text" value={newTodo} onChange={(e) => setNewTodo(e.target.value)} />
         <button onClick={handleAddTodo}>Add</button>
       </div>
       <ul>

@@ -13,6 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 // Navigation links
 const pages = [
@@ -21,13 +22,15 @@ const pages = [
   { label: 'Day13', path: '/day13' },
   { label: 'Ohter', path: '/other' },
   { label: 'Day16', path: '/day16' },
-  { label: 'Day18', path: '/day18' }
+  { label: 'Day18', path: '/day18' },
+  { label: 'Practice', path: '/practice' }
 ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const val = useSelector((state) => state.slice1)
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -141,7 +144,7 @@ function ResponsiveAppBar() {
               </Button>
             ))}
           </Box>
-
+          <h3 style={{marginRight: "20px"}}>Redux : {val}</h3>
           {/* User Menu */}
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">

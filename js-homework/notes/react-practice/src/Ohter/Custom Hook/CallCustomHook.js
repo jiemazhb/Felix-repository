@@ -7,12 +7,7 @@ export default function CallCustomHook() {
     return (
         <div>
             <h1>Hello, {name}!</h1>
-            <input
-                type="text"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                placeholder="Enter your name"
-            />
+            <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
         </div>
     );
 }
