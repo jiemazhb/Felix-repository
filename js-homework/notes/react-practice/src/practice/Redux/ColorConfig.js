@@ -18,7 +18,8 @@ const ColorStore = configureStore({
           ignoredActions: ['persist/PERSIST', 'persist/REHYDRATE'], // 忽略特定的 action
           ignoredPaths: ['register', 'rehydrate'], // 忽略 action 或 state 中的路径
         },
-      }).concat(logger),
+      }),
+        //}).concat(logger),
   });
 
   const persistor = persistStore(ColorStore);

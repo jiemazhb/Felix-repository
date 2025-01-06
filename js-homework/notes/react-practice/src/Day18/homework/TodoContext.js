@@ -13,6 +13,8 @@ const todoReducer = (state, action) => {
     case "FETCH_TODOS":
       return { ...state, todos: action.payload };
     case "ADD_TODO":
+      console.log(state);
+
       return { ...state, todos: [...state.todos, action.payload] };
     case "UPDATE_TODO":
       return {

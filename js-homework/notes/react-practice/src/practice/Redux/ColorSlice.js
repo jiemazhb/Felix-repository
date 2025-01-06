@@ -22,7 +22,7 @@
 
 import { createSlice } from "@reduxjs/toolkit";
 
-const ColorSlice = createSlice({
+const colorSlice = createSlice({
     name: "theme",
     initialState: {
       color: "black", 
@@ -78,5 +78,5 @@ const ColorSlice = createSlice({
   
 
 export {asyncSwitchColor}
-export default ColorSlice.reducer;
-export const { switchColor, fetchUsersStart, fetchUsersSuccess, fetchUsersError} = ColorSlice.actions;
+export default colorSlice.reducer;
+export const { switchColor, fetchUsersStart, fetchUsersSuccess, fetchUsersError} = colorSlice.actions;

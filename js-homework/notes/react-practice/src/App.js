@@ -7,6 +7,7 @@ import Other from './Ohter/Other'
 import Day16 from './Day16/Day16'
 import Day18 from './Day18/Day18'
 import Practice from './practice/Practice'
+import TodoList from './TodoList/TodoList'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='day16' element = {<Day16/>} />
           <Route path='day18' element = {<Day18/>} />
           <Route path='practice' element = {<Practice/>} />
+          <Route path='TodoList' element = {<TodoList/>} />
         </Route>
       </Routes>
     </Router>

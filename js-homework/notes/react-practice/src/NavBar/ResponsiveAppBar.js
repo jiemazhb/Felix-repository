@@ -23,7 +23,8 @@ const pages = [
   { label: 'Ohter', path: '/other' },
   { label: 'Day16', path: '/day16' },
   { label: 'Day18', path: '/day18' },
-  { label: 'Practice', path: '/practice' }
+  { label: 'Practice', path: '/practice' },
+  { label: 'TodoList', path: '/TodoList' }
 ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
