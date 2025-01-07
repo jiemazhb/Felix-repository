@@ -20,7 +20,7 @@
     {
       "id": "ad22",
       "text": "cccc",
-      "completed": true
+      "completed": false
     },
     {
       "id": "6b4f",
@@ -28,19 +28,14 @@
       "completed": false
     },
     {
-      "id": "3fcf",
-      "text": "ddddd",
-      "completed": true
-    },
-    {
       "id": "30fa",
       "text": "rrrtt",
-      "completed": false
+      "completed": true
     },
     {
       "id": "f1ac",
       "text": "3333",
-      "completed": true
+      "completed": false
     }
   ]
 }

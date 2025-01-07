@@ -9,12 +9,15 @@ import {
   editCurrentData,
   setEditingId,
 } from "../Ohter/Redux/TodoListSlice";
+import { Link, NavLink } from "react-router-dom";
 
 import ProgressBar from "./ProgressBar";
 
 export default function TodoList() {
   const [textVal, settextVal] = useState("");
   const [editingBox, setEditingBox] = useState("")
+
+
   const selector = useSelector((state) => {
     return state.todoSlice;
   });
@@ -79,9 +82,11 @@ export default function TodoList() {
     dispatcher(deleteAllChecked());
   };
 
+
   return (
     <div>
       <h1>TODOLIST</h1>
+      <Link to = "/practice">jump to practice</Link>
       <div>
         <input type="text" value={textVal} onChange={(e) => handleChange(e)} />
         <button onClick={handleAdd}> + </button>

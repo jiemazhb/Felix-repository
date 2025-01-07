@@ -17,12 +17,12 @@ function App() {
           <Route index element = {<Day11/>} />
           <Route path='day12' element = {<Day12/>} />
           <Route path='day13' element = {<Day13/>} />
-          <Route path='other' element = {<Other/>} />
           <Route path='day16' element = {<Day16/>} />
           <Route path='day18' element = {<Day18/>} />
           <Route path='practice' element = {<Practice/>} />
-          <Route path='TodoList' element = {<TodoList/>} />
+          <Route path='TodoList' element = {<TodoList/>}/>
         </Route>
+        <Route path='other' element = {<Other/>} />
       </Routes>
     </Router>
   );
