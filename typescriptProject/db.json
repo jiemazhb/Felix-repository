@@ -1,0 +1,23 @@
+{
+  "todos": [
+    {
+      "id": "1",
+      "task": "Learn TypeScript",
+      "completed": false,
+      "description": "Understand the basics of TypeScript"
+    },
+    {
+      "id": "2",
+      "task": "Build a React App",
+      "completed": true,
+      "description": "Create a React app with TypeScript"
+    },
+    {
+      "id": "0d0b",
+      "task": "111111",
+      "completed": false,
+      "date": "2025-01-09T23:14:50.269Z",
+      "description": "2222222"
+    }
+  ]
+}
