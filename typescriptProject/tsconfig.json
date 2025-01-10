@@ -3,5 +3,10 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  "compilerOptions": {
+    "composite": true, // Enables project references
+    "skipLibCheck": true, // Optional: Speeds up build time
+    "strict": true // Recommended for TypeScript projects
+  }
 }
