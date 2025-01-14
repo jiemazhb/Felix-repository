@@ -27,7 +27,9 @@ export default function Mainpage() {
 
   return (
     <div style={{margin : "100px"}}>
-      <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+      <Link to={"/general"}>new page</Link>
+      <Link to={"assistant"}>assistant</Link>
+      <div style={{ display: "flex", flexDirection: "column", gap: "10px", marginTop: "30px"}}>
         <input placeholder="name of the list" type="text" value={content} onChange={(e) => {setContent(e.target.value)}}/>
         <textarea placeholder="Discription" value={textAreaVal} onChange={(e) => {setTextAreaVal(e.target.value)}}></textarea>
         <button onClick={handleAddToList}>add</button>

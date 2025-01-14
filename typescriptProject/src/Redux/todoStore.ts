@@ -1,14 +1,15 @@
 import { configureStore } from '@reduxjs/toolkit';
-import todoSlice from './todoSlice';
+import TodoReducer from './todoSlice';
+import ListReducer from '../components/SelfPractice/ListSlice'
 
-// 定义 RootState 和 AppDispatch 类型
-export type RootState = ReturnType<typeof todoStore.getState>;
-export type AppDispatch = typeof todoStore.dispatch;
 
-const todoStore = configureStore({
+const myStore = configureStore({
   reducer: {
-    todoStore: todoSlice,
+    todoStore: TodoReducer,
+    listStore: ListReducer
   },
 });
 
-export default todoStore;
+export default myStore;
+export type RootState = ReturnType<typeof myStore.getState>;
+export type AppDispatch = typeof myStore.dispatch;
