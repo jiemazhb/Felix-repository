@@ -1,0 +1,76 @@
+/* .patient-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  font-family: 'Manrope', sans-serif;
+}
+.patient-avatar {
+  width: 200px;                
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;        
+}
+
+.card-title-24pt {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;           
+  font-size: 24px;             
+  color: #072635;
+  margin-bottom: 24px;
+  line-height: 33px;
+}
+
+.patient-info-list {
+  text-align: left;
+  margin-bottom: 24px;
+  padding: 0 12px;
+}
+
+.info-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.icon-img {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.info-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.body-regular-14 {
+  font-size: 14px;
+  color: #707070;
+}
+
+.body-emphasized-14pt {
+  font-size: 14px;
+  font-weight: 700;
+  color: #072635;
+}
+
+.info-button {
+  background-color: #01f0d0;
+  color: #072635;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.info-button:hover {
+  background-color: #00d9bc;
+} */

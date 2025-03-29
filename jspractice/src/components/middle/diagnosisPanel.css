@@ -1,0 +1,172 @@
+/* .diagnosis-panel {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'Manrope', sans-serif;
+    color: #072635;
+    margin-bottom: 16px;
+  }
+  
+
+  .card {
+    background-color: #f4ecff;
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+
+  .chart-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .chart-left {
+    flex: 1;
+    min-width: 240px;
+  }
+  
+  .chart-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #072635;
+  }
+  
+  .chart-right {
+    min-width: 180px;
+    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    gap: 12px;
+  } 
+
+
+  .metric {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .metric .label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #072635;
+    margin-bottom: 4px;
+  }
+
+
+  .metric .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+  }
+
+  .vital-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+
+  .metric .value {
+    font-size: 20px;
+    font-weight: bold;
+    color: #072635;
+  }
+  
+  .metric .trend {
+    font-size: 13px;
+    color: #707070;
+  }
+  
+
+  .vitals-grid {
+    margin-top: 16px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  
+
+  .vital-card {
+    flex: 1;
+    min-width: 160px;
+    background-color: #f6f6f6;
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .vital-card.blue {
+    background-color: #e6f7fb;
+  }
+
+  .vital-card.pink {
+    background-color: #ffecec;
+  }
+  
+.vital-card.purple {
+  background-color: #ffeef7;
+}
+
+  
+.vital-icon {
+    background-color: white;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+  }
+  
+
+ 
+
+  .vital-icon img {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .vital-label {
+    font-size: 14px;
+    color: #072635;
+  }
+  
+  
+  .vital-value {
+    font-size: 20px;
+    font-weight: bold;
+    color: #072635;
+    margin-top: 4px;
+  }
+  
+  .vital-note {
+    font-size: 13px;
+    color: #707070;
+    margin-top: 4px;
+  }
+   */

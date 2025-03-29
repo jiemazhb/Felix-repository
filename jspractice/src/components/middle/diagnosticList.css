@@ -1,0 +1,84 @@
+/* .diagnostic-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  margin-top: 24px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-family: 'Manrope', sans-serif;
+}
+
+.diagnostic-title {
+  font-size: 18px;
+  font-weight: 800;
+  color: #072635;
+  margin-bottom: 16px;
+}
+
+
+.table-container {
+  max-height: 200px; 
+  overflow-y: auto;
+  border-radius: 12px;
+}
+
+
+.table-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.table-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+
+
+.table-container {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.15) transparent;
+}
+
+
+.diagnostic-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.diagnostic-table thead {
+  background-color: #f1f4f9;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.diagnostic-table th {
+  text-align: left;
+  padding: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #072635;
+}
+
+.diagnostic-table td {
+  padding: 16px;
+  font-size: 14px;
+  color: #072635;
+}
+
+.diagnostic-table tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.diagnostic-table tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+
+.diagnostic-table tbody tr.selected {
+  border: 1px solid #01f0d0;
+  background-color: #d8fcf7;
+  border-radius: 8px;
+} */

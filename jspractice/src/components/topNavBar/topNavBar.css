@@ -1,0 +1,84 @@
+.NavBar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  border-radius: 70px;
+  margin: 18px 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); 
+  background-color: #fff;
+  user-select: none;
+}
+
+.navbar-left{
+  height: 48px;            
+  padding-left: 32px;      
+  display: flex;            
+  align-items: center;   
+}
+
+
+.items{
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  gap: 8px;
+  
+}
+
+.item{
+  display: flex;           
+  align-items: center;    
+  justify-content: center;  
+  gap: 4px;   
+  font-size: 14px;         
+  font-weight: bold;
+  color: #072635;    
+  font-family: 'Manrope', sans-serif;  
+  padding: 8px 12px;       
+  border-radius: 24px;     
+  cursor: pointer;         
+  transition: background-color 0.2s ease; 
+}
+
+.item.active {
+  background-color: #01F0D0;
+}
+
+.navbar-right{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  padding-right: 32px;           
+  height: 44px; 
+}
+
+.avatar{
+  width: 44px;
+  height: 44px;         
+  object-fit: cover;
+}
+
+.user-info{
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  font-size: 14px;
+  font-weight: 700;
+  margin-right: 12px;
+}
+
+.user-intro{
+  font-family: 'Manrope', sans-serif; 
+  color: #707070 !important;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.settings-icon{
+  margin-right: 12px;
+}
+

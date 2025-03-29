@@ -4,7 +4,8 @@ import { deleteTodo, toggleTodo } from '../slices/todosSlice';
 
 const TodoList = () => {
   const todos = useSelector((state) => state.todos);
-
+  console.log(todos);
+  
   const dispatch = useDispatch();
 
   const handleToggle = (todo) => {
